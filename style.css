@@ -1,10 +1,18 @@
 body{
-    background-color: black;
+    font-family: "Roboto", sans-serif;
+    background-color: #1F6F5F;
+    margin: 0;
 }
 
 header{
-    background-color: #23DB4B;
+    background-color: #6FCF97;
     height: 100px;
+}
+
+.navbar{
+    background-color: #6FCF97;
+    padding: 30px;
+
 }
 
 .menu{
@@ -13,8 +21,14 @@ header{
     flex-direction: row-reverse;
 }
 
-.br{
-    display: flex;
-    height: 100%;
-    width: 20%;
+.dropdown-menu{
+    background-color: #EEEEEE;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
 }

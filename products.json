@@ -1,0 +1,10 @@
+[
+    {
+        "id": 1,
+        "name": "Nike Air Max 270",
+        "price": 150,
+        "image": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/9c8e5b3e-7a4c-4d9b-8f2c-5a1e5b6c8e7c/air-max-270-shoe-KkLcGR.png",
+        "description": "The Nike Air Max 270 features a large Air unit in the heel for maximum cushioning and a sleek design inspired by lifestyle and running shoes.",
+        "category": "shoes"
+    }
+]
