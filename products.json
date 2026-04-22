@@ -6,5 +6,33 @@
         "image": "https://img.eobuwie.cloud/eob_product_512w_512h(9/e/e/a/9eea7bd9884197b8050e70b7a4ab5c7b32a47da6_0000206341235_02_pa.jpg,jpg)/vzuttia-nike-air-max-270-ah6789-006-black-black-black.jpg",
         "description": "",
         "category": "shoes"
+    },
+
+    {
+        "id": 2,
+        "name": "Nike Air Max 270",
+        "price": 150,
+        "image": "https://img.eobuwie.cloud/eob_product_512w_512h(9/e/e/a/9eea7bd9884197b8050e70b7a4ab5c7b32a47da6_0000206341235_02_pa.jpg,jpg)/vzuttia-nike-air-max-270-ah6789-006-black-black-black.jpg",
+        "description": "",
+        "category": "shoes"
+    },
+
+    {
+        "id": 3,
+        "name": "Nike Air Max 270",
+        "price": 150,
+        "image": "https://img.eobuwie.cloud/eob_product_512w_512h(9/e/e/a/9eea7bd9884197b8050e70b7a4ab5c7b32a47da6_0000206341235_02_pa.jpg,jpg)/vzuttia-nike-air-max-270-ah6789-006-black-black-black.jpg",
+        "description": "",
+        "category": "shoes"
+    },
+
+    {
+        "id": 4,
+        "name": "Nike Air Max 270",
+        "price": 150,
+        "image": "https://img.eobuwie.cloud/eob_product_512w_512h(9/e/e/a/9eea7bd9884197b8050e70b7a4ab5c7b32a47da6_0000206341235_02_pa.jpg,jpg)/vzuttia-nike-air-max-270-ah6789-006-black-black-black.jpg",
+        "description": "",
+        "category": "shoes"
     }
 ]
+

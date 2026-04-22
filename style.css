@@ -34,5 +34,66 @@ header{
 }
 
 .container{
-    margin-top: 20px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-list{
+    display: flex;
+    /* flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; */
+}
+
+/* @media (max-width: 1400px){
+    .product-list{
+        display: flex;
+    }
+}
+
+@media (max-width: 992px){
+    .product-list{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px){
+    .product-list{
+        display: flex;
+    }
+} */
+
+.basket_card{
+    width: 490px;
+    height: 254px;
+    background: rgb(236, 236, 236);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    position: fixed;        
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    z-index: 9999; 
+
+}
+
+.hide{
+    display: none;
+}
+
+.p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.z-index{
+    z-index: 999;
+}
+
+.action{
+    text-align: center;
+    margin: 50px;
+    color: red;
 }
