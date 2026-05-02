@@ -32,16 +32,16 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
+
         <li class="nav-item">
           <wa-dialog label="Кошик" class="dialog-scrolling">
   <div style="height: 150vh; border: dashed 2px var(--wa-color-surface-border); padding: 0 1rem;">
+    <p>Загальна сума: $<span id="total-price">0</span></p>
     <p>Товари що додані у кошик 👇</p>
     <div class="modal-body" id="cart-items"></div>
   </div>
   <wa-button slot="footer" variant="brand" data-dialog="close">Закрити</wa-button>
+  <wa-button class="reset_basket" slot="footer" variant="brand" data-dialog="reset">Очистити корзину</wa-button>
 </wa-dialog>
 
 <wa-button slot="footer" appearance="filled">Кошик</wa-button>
@@ -51,25 +51,28 @@
 </script>
 
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <!-- <li class="nav-item dropdown">
+           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Каталог
-          </a>
-          <ul class="dropdown-menu">
+          </a> -->
+          <!-- <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
-        </li>
+        </li> --> 
+
         <li class="nav-item">
           <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
         </li>
       </ul>
       <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <input class="form-control me-2" type="search" id="search-input" placeholder="Search" aria-label="Search"/>
         <button class="btn btn-outline-success searchBtn" type="submit">Search</button>
       </form>
+        <button class="btn btn-outline-light ms-2" id="wishlist-btn">❤️ Вибране</button>
+        <button class="btn btn-outline-light ms-2" id="login-btn">👤 Увійти</button>
     </div>
   </div>
 </nav>
@@ -86,7 +89,39 @@
           <button class="exit">×</button>
           <div class="basket_items"></div>
     </div> -->
-    
+
+<wa-dialog label="Вибране ❤️" class="dialog-wishlist">
+  <div style="padding: 1rem;">
+    <div id="wishlist-items"></div>
+  </div>
+  <wa-button slot="footer" variant="brand" data-dialog="close">Закрити</wa-button>
+</wa-dialog>
+
+
+<wa-dialog label="Вхід / Реєстрація" class="dialog-login">
+  <div style="padding: 1rem;">
+    <div id="auth-tabs" style="display:flex; gap:10px; margin-bottom:20px;">
+        <button class="btn btn-success" onclick="showTab('login')">Вхід</button>
+        <button class="btn btn-outline-success" onclick="showTab('register')">Реєстрація</button>
+    </div>
+
+    <div id="tab-login">
+        <input class="form-control mb-2" type="email" id="login-email" placeholder="Email" />
+        <input class="form-control mb-2" type="password" id="login-password" placeholder="Пароль" />
+        <button class="btn btn-success w-100" onclick="loginUser()">Увійти</button>
+        <p id="login-error" style="color:red; margin-top:8px;"></p>
+    </div>
+
+    <div id="tab-register" style="display:none;">
+        <input class="form-control mb-2" type="text" id="reg-name" placeholder="Ім'я" />
+        <input class="form-control mb-2" type="email" id="reg-email" placeholder="Email" />
+        <input class="form-control mb-2" type="password" id="reg-password" placeholder="Пароль" />
+        <button class="btn btn-success w-100" onclick="registerUser()">Зареєструватись</button>
+        <p id="reg-error" style="color:red; margin-top:8px;"></p>
+    </div>
+  </div>
+  <wa-button slot="footer" variant="brand" data-dialog="close">Закрити</wa-button>
+</wa-dialog>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="script.js"></script>

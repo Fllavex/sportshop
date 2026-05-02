@@ -6,7 +6,7 @@ body{
 
 header{
     background-color: #6FCF97;
-    height: 100px;
+    min-height: 100px;
 }
 
 .navbar{
